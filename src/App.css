@@ -1,0 +1,96 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #282c34;
+  color: #ffffff;
+}
+
+.calculator {
+  width: 360px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background: #1e1e1e;
+}
+
+.display {
+  background: #333;
+  color: #fff;
+  font-size: 2.5em;
+  text-align: right;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.button-panel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+
+.button-panel button {
+  padding: 20px;
+  font-size: 1.5em;
+  border: none;
+  outline: none;
+  background: #444;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.button-panel button:hover {
+  background: #555;
+}
+
+.button-panel button:active {
+  background: #666;
+  transform: scale(0.98);
+}
+
+.button-panel .operator {
+  background: #f78e69;
+}
+
+.button-panel .operator:hover {
+  background: #f67e59;
+}
+
+.button-panel .operator:active {
+  background: #f56e49;
+}
+
+.button-panel .equals {
+  background: #68b3f7;
+  grid-column: span 2;
+}
+
+.button-panel .equals:hover {
+  background: #58a3e7;
+}
+
+.button-panel .equals:active {
+  background: #4893d7;
+}
+
+.button-panel .zero {
+  grid-column: span 2;
+}
+
+.button-panel .clear {
+  background: #f44336;
+}
+
+.button-panel .clear:hover {
+  background: #e43326;
+}
+
+.button-panel .clear:active {
+  background: #d42316;
+}
+
